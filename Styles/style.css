@@ -59,17 +59,20 @@ html::-webkit-scrollbar-thumb {
   font-family: "Andika", sans-serif;
 }
 
+.sectionTitleBox{
+  text-align: center;
+  padding-bottom: 32px;
+}
+
 .sectionTitle{
   font-size: 2rem;
   font-family: "Hind Guntur", sans-serif;
-  text-align: center;
-  padding-bottom: 24px;
+  line-height: 1.5rem;
 }
 
 .sectionSubtitle{
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
-  padding-bottom: 16px;
 }
 
 /* ============================== home section css ============================== */
@@ -106,7 +109,7 @@ html::-webkit-scrollbar-thumb {
   width: 42px;
   height: 42px;
   margin-left: 16px;
-  margin-top: -4px;
+  /* margin-top: -4px; */
 }
 
 .introLine {
@@ -139,13 +142,14 @@ html::-webkit-scrollbar-thumb {
 .introEmail {
   font-family: "Andika", sans-serif;
   padding-top: 16px;
+  line-height: 0.75rem;
 }
 
 .introPlanet {
   position: absolute;
   top: 80px;
   right: 100px;
-  animation: rotate 20s linear infinite;
+  animation: rotate 20s linear infinite; /* Apply the "rotate" animation */
 }
 
 .introRocket {
@@ -154,7 +158,7 @@ html::-webkit-scrollbar-thumb {
   bottom: 80px;
   left: 10px;
   rotate: -15deg;
-  animation: wiggleDrift 10s ease-in-out infinite;
+  animation: wiggleDrift 10s ease-in-out infinite; /* Apply the "wiggleDrift" animation */
 }
 
 .introStarConstellation1 {
@@ -220,9 +224,53 @@ html::-webkit-scrollbar-thumb {
   text-align: justify;
 }
 
+.aboutSectionLine{
+  width: 300px;
+  height: 100%
+}
+
 .aboutContent{
   font-family: "Andika", sans-serif;
   font-size: 1.125rem;
   padding-bottom: 16px;
   color: var(--text-color);
+}
+
+.skillsTitle{
+  padding: 16px 0px 24px 0px;
+}
+
+.skillsContentDiv{
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
+.skillsContent{
+  font-family: "Andika", sans-serif;
+  font-size: 1.125rem;
+  color: var(--text-color);
+  padding-right: 16px;
+}
+
+.skillsImages img{
+  width: 50px;
+  height: 50px;
+  margin: 0px 12px;
+}
+
+/* ============================== view resume section css ============================== */
+.viewResumeSection{
+  background-color: #2E538F;
+}
+
+.viewResumeTitle{
+  line-height: unset;
+  text-align: center;
+}
+
+/* ============================== footer section css ============================== */
+.footerContent{
+  font-family: "Andika", sans-serif;
+  text-align: center;
 }

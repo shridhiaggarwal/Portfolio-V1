@@ -29,7 +29,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="prevent-select">
     <header>
 
     </header>
@@ -39,7 +39,7 @@
             <div class="introSectionContent">
                 <div class="introHelloDiv">
                     <h1 class="introHello">Hello!</h1>
-                    <img class="introWaveImage" src="Images/wave2.png" />
+                    <img class="introWaveImage" src="Images/wave2.png" alt="hand wave icon"/>
                 </div>
                 <h2 class="introLine">I'm <span class="myName">Shridhi Aggarwal</span>, a dedicated front-end software
                     engineer who likes to craft beautiful interfaces and enjoyable experiences.</h2>
@@ -47,21 +47,24 @@
                     engineer who enjoys crafting beautiful web application frontends.</h2> -->
                 <div class="introContact">
                     <p>Get in touch</p>
-                    <img class="pointRightImage" src="Images/pointRight.png" />
+                    <img class="pointRightImage" src="Images/pointRight.png" alt="hand point right icon"/>
                     <div>
                         <p class="introEmail">shridhi.aggarwal@gmail.com</p>
-                        <img class="" src="Images/shortLine.png" />
+                        <img class="" src="Images/shortLine.png" alt="blue line image"/>
                     </div>
                 </div>
             </div>
-            <img class="introPlanet" src="Images/planet.png" />
-            <img class="introRocket" src="Images/rocket.png" />
-            <img class="introStarConstellation1" src="Images/starConstellation1.png" />
-            <img class="introStarConstellation2" src="Images/starConstellation2.png" />
+            <img class="introPlanet" src="Images/planet.png" alt="planet image"/>
+            <img class="introRocket" src="Images/rocket.png" alt="rocket image"/>
+            <img class="introStarConstellation1" src="Images/starConstellation1.png" alt="star constellation image"/>
+            <img class="introStarConstellation2" src="Images/starConstellation2.png" alt="star constellation image 2"/>
         </section>
         <!-- about section -->
         <section class="commonSection aboutSection">
-            <h2 class="sectionTitle">About</h2>
+            <div class="sectionTitleBox">
+                <h2 class="sectionTitle">About</h2>
+                <img src="Images/line2.png" alt="blue line image"/>
+            </div>
             <p class="aboutContent">Shridhi is a skilled and passionate software engineer with expertise in JavaScript
                 and TypeScript. With a
                 strong focus on Frontend development, she is well-versed in React.js, Redux, React Router, Styled
@@ -73,28 +76,98 @@
                 strong focus on Frontend development, she is well-versed in React.js, Redux, React Router, Styled
                 Components, Material UI, HTML, CSS, and Bootstrap.
             </p>
-            <h3 class="sectionSubtitle">Skills</h3>
-            <div></div>
+            <h3 class="sectionSubtitle skillsTitle">Skills</h3>
+            <div class="skillsImages">
+                <div class="skillsContentDiv">
+                    <p class="skillsContent">Languages</p>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                        alt="TypeScript" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+                        alt="React" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+                        alt="Redux" />
+                    <img src="Images/skills/ReactRouter.svg" alt="React_Router" />
+                    <img src="Images/skills/StyledComponent.svg" alt="Styled_Component" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-plain.svg"
+                        alt="MUI" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                        alt="HTML5" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+                    <img src="Images/skills/bootstrap.svg" alt="Bootstrap" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+                        alt="MySQL" />
+                </div>
+                <div class="skillsContentDiv">
+                    <p class="skillsContent">Tools</p>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" alt="Git" />
+                    <img src="Images/skills/github.svg" alt="GitHub" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg"
+                        alt="Bitbucket" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tortoisegit/tortoisegit-original.svg"
+                        alt="Tortoise_Git" />
+                    <!-- <img src="Images/skills/Swagger.svg" alt="Swagger" /> -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
+                        alt="Visual_Studio" />
+                    <img src="Images/skills/sublimetext.svg" alt="Sublime_Text" />
+                    <img src="Images/skills/CodeSandBox.svg" alt="CodeSandbox" />
+                    <img src="Images/skills/storybook.svg" alt="Storybook" />
+                    <img src="Images/skills/Invision.svg" alt="Invision" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
+                        alt="Canva" />
+                    <img src="Images/skills/browserstack.svg" />
+                    <img src="Images/skills/postman.svg" />
+                    <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                        alt="Figma" /> -->
+                </div>
+                <div class="skillsContentDiv">
+                    <p class="skillsContent">Familiar With</p>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                        alt="C++" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
+                        alt="Python" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
+                        alt="Java" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg"
+                        alt="Vuejs" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" />
+                    <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                        alt="Django" /> -->
+                    <img src="Images/skills/django.svg" alt="Django" />
+                </div>
+            </div>
         </section>
         <!-- work experience section -->
         <section class="commonSection">
-            <h2 class="sectionTitle">Work Experience</h2>
+            <div class="sectionTitleBox">
+                <h2 class="sectionTitle">Work Experience</h2>
+                <img src="Images/line2.png" />
+            </div>
         </section>
         <!-- projects section -->
         <section class="commonSection">
-            <h2 class="sectionTitle">Projects</h2>
+            <div class="sectionTitleBox">
+                <h2 class="sectionTitle">Projects</h2>
+                <img src="Images/line2.png" />
+            </div>
         </section>
         <!-- view resume section -->
-        <section class="commonSection">
-            <h2 class="sectionTitle">View Resume</h2>
+        <section class="commonSection viewResumeSection">
+            <h2 class="sectionTitle viewResumeTitle">View Resume</h2>
         </section>
         <!-- contact section -->
         <section class="commonSection">
-            <h2 class="sectionTitle">Get in Touch</h2>
+            <div class="sectionTitleBox">
+                <h2 class="sectionTitle">Get in Touch</h2>
+                <img src="Images/line2.png" />
+            </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="commonSection">
+        <p class="footerContent">Designed and Developed by Shridhi @2023</p>
     </footer>
 </body>
 
