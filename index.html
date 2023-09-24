@@ -31,7 +31,29 @@
 
 <body>
     <header>
-
+        <div class="logo">
+            <!-- <img src="logo.png" alt="Logo"> -->
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about" class="navlink link">About</a>
+                </li>
+                <li>
+                    <a href="#experience" class="navlink link">Experience</a>
+                </li>
+                <li>
+                    <a href="#projects" class="navlink link">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" class="navlink link">Contact</a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/file/d/1loooiP1JGgXClIQA_x2ajpSUS1gJe9Ay/view?usp=sharing"
+                        class="navlink link" target="_blank">Resume</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -65,7 +87,7 @@
 
 
         <!-- about section -->
-        <section class="commonSection aboutSection">
+        <section id="about" class="commonSection aboutSection">
             <div class="sectionTitleBox">
                 <h2 class="sectionTitle">About</h2>
                 <img src="Images/line2.png" alt="blue line image" />
@@ -151,7 +173,7 @@
 
 
         <!-- work experience section -->
-        <section class="commonSection">
+        <section id="experience" class="commonSection">
             <div class="sectionTitleBox">
                 <h2 class="sectionTitle">Work Experience</h2>
                 <img src="Images/line2.png" />
@@ -267,7 +289,7 @@
 
 
         <!-- projects section -->
-        <section class="commonSection">
+        <section id="projects" class="commonSection">
             <div class="sectionTitleBox">
                 <h2 class="sectionTitle">Projects</h2>
                 <img src="Images/line2.png" />
@@ -340,7 +362,7 @@
             </div>
         </section>
 
-        
+
         <!-- view resume section -->
         <section class="commonSection viewResumeSection">
             <img class="viewResumeImage" src="Images/folderDownload.png" />
@@ -352,7 +374,7 @@
 
 
         <!-- contact section -->
-        <section class="commonSection contactSection">
+        <section id="contact" class="commonSection contactSection">
             <div class="sectionTitleBox">
                 <h2 class="sectionTitle">Get in Touch</h2>
                 <img src="Images/line2.png" />
@@ -382,14 +404,14 @@
                         </div>
                     </div>
                 </a>
-                <a href="https://twitter.com/shridhiaggarwal" target="_blank" class="link">
+                <!-- <a href="" target="_blank" class="link">
                     <div class="contactImagePillBox">
                         <img src="Images/contacts/twitter.svg" alt="Twitter Icon" />
                         <div class="contactPill">
                             Twitter
                         </div>
                     </div>
-                </a>
+                </a> -->
             </div>
         </section>
     </main>
@@ -397,6 +419,8 @@
     <footer class="commonSection footerSection">
         <p class="footerContent">Designed and Developed by Shridhi @2023</p>
     </footer>
+
+    <script src="Scripts/script.js"></script>
 </body>
 
 </html>

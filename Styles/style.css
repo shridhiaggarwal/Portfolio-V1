@@ -7,9 +7,9 @@
   --scroll-bar-bg-color: #171c28;
   /* colors - dark theme*/
   --dark-jungle-green: #171c28;
-  --yinmn-blue: #2E538F;
+  --yinmn-blue: #2e538f;
   --platinum: #e7e7e7;
-  --cadet-blue: #afafbf
+  --cadet-blue: #afafbf;
 }
 
 /* page start - 2.5 rem - 40px
@@ -39,6 +39,7 @@ body {
 }
 
 html {
+  scroll-behavior: smooth;
   scrollbar-width: thin !important;
   scrollbar-color: var(--scroll-bar-color) var(--scroll-bar-bg-color) !important;
 }
@@ -57,39 +58,77 @@ html::-webkit-scrollbar-thumb {
   border: 4px solid var(--scroll-bar-color);
 }
 
-.commonSection{
+.commonSection {
   padding: 80px 120px;
 }
 
-.sectionTitleBox{
+.sectionTitleBox {
   text-align: center;
   padding-bottom: 32px;
 }
 
-.sectionTitle{
+.sectionTitle {
   font-size: 2rem;
   font-family: "Hind Guntur", sans-serif;
   line-height: 1.5rem;
 }
 
-.sectionSubtitle{
+.sectionSubtitle {
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
 }
 
-.sectionContent{
+.sectionContent {
   font-family: "Andika", sans-serif;
   font-size: 1.125rem;
   color: var(--cadet-blue);
 }
 
-.link{
+.link {
   text-decoration: none;
   color: inherit;
 }
 
-.link:hover{
+.link:hover {
   text-decoration: underline;
+}
+
+/* ============================== header section css ============================== */
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: var(--dark-jungle-green);
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 16px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  background-color: var(--yinmn-blue);
+  padding: 4px 16px;
+  border-radius: 16px;
+  margin-right: 16px;
+  transition: transform 0.5s;
+}
+
+nav li:hover {
+  background-color: #1e407f;
+}
+
+.navlink:hover {
+  text-decoration: none;
 }
 
 /* ============================== home section css ============================== */
@@ -234,109 +273,107 @@ html::-webkit-scrollbar-thumb {
   }
 }
 
-
 /* ============================== about section css ============================== */
-.aboutSection{
+.aboutSection {
   text-align: justify;
 }
 
-.aboutSectionLine{
+.aboutSectionLine {
   width: 300px;
-  height: 100%
+  height: 100%;
 }
 
-.aboutContent{
+.aboutContent {
   padding-bottom: 16px;
 }
 
-.skillsTitle{
+.skillsTitle {
   padding: 16px 0px 24px 0px;
 }
 
-.skillsContentDiv{
+.skillsContentDiv {
   display: flex;
   align-items: center;
   padding-bottom: 24px;
   flex-wrap: wrap;
 }
 
-.skillsContent{
+.skillsContent {
   padding-right: 16px;
 }
 
-.skillsImages img{
+.skillsImages img {
   width: 50px;
   height: 50px;
   margin: 0px 12px;
 }
 
-
 /* ============================== work experience section css ============================== */
-.experienceBox{
+.experienceBox {
   display: flex;
   padding-bottom: 32px;
 }
 
-.experienceBoxLeftSide{
+.experienceBoxLeftSide {
   flex: 0 0 auto;
   width: 260px;
   padding-right: 80px;
 }
 
-.experienceBoxRightSide{
+.experienceBoxRightSide {
   flex: 1;
   max-width: 950px;
 }
 
-.companyTitle{
+.companyTitle {
   padding-bottom: 8px;
 }
 
-.designationTitle{
+.designationTitle {
   padding-bottom: 8px;
 }
 
-.companyWorkList{
+.companyWorkList {
   padding-left: 20px;
 }
 
 /* ============================== projects section css ============================== */
-.projectBox{
+.projectBox {
   display: flex;
   padding-bottom: 80px;
 }
 
-.projectLeftSide{
+.projectLeftSide {
   flex: 0 0 auto;
   width: 600px;
   padding-right: 40px;
 }
 
-.projectRightSide{
+.projectRightSide {
   flex: 1;
   max-width: 950px;
 }
 
-.projectImage{
+.projectImage {
   width: inherit;
 }
 
-.projectTitle{
+.projectTitle {
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-.projectContent{
+.projectContent {
   padding-bottom: 80px;
 }
 
-.projectSkills{
+.projectSkills {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.projectSkillsPill{
+.projectSkillsPill {
   background-color: var(--yinmn-blue);
   padding: 8px 16px;
   border-radius: 16px;
@@ -344,13 +381,13 @@ html::-webkit-scrollbar-thumb {
   margin-bottom: 16px;
 }
 
-.centerButton{
+.centerButton {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#showMoreButton{
+#showMoreButton {
   font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
   color: var(--platinum);
@@ -363,13 +400,11 @@ html::-webkit-scrollbar-thumb {
 }
 
 #showMoreButton:hover {
-  /* transform: scale(1.05); */
-  background-color: #1E407F;
-  /* background-color: #1C365D; */
+  background-color: #1e407f;
 }
 
 /* ============================== view resume section css ============================== */
-.viewResumeSection{
+.viewResumeSection {
   background-color: var(--yinmn-blue);
   display: flex;
   justify-content: center;
@@ -378,46 +413,44 @@ html::-webkit-scrollbar-thumb {
   margin: 80px 0px;
 }
 
-.viewResumeTitle{
+.viewResumeTitle {
   line-height: unset;
   text-align: center;
   margin-bottom: -14px;
 }
 
-.viewResumeImage{
-  height: 50px; 
+.viewResumeImage {
+  height: 50px;
   color: white;
   fill: white;
   margin-right: 16px;
 }
 
-
 /* ============================== contact me section css ============================== */
-.contactSection{
+.contactSection {
   padding-top: 150px;
 }
 
-.contactImages{
+.contactImages {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.contactImages img{
+.contactImages img {
   width: 50px;
   height: 50px;
   z-index: 2;
   transition: transform 0.3s;
 }
 
-
-.contactImagePillBox{
+.contactImagePillBox {
   display: flex;
   align-items: center;
   margin: 0px 16px;
 }
 
-.contactPill{
+.contactPill {
   background-color: var(--yinmn-blue);
   padding: 8px 24px 8px 32px;
   border-radius: 16px;
@@ -429,14 +462,13 @@ html::-webkit-scrollbar-thumb {
   transform: scale(1.05);
 }
 
-
 /* ============================== footer section css ============================== */
-.footerSection{
+.footerSection {
   padding-top: 0px;
   padding-bottom: 40px;
 }
 
-.footerContent{
+.footerContent {
   font-family: "Andika", sans-serif;
   text-align: center;
 }
