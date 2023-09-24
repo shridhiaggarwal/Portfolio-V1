@@ -4,7 +4,7 @@
   --lg: 1024px;
   /* colors - scrollbar theme*/
   --scroll-bar-color: #b0b0b0;
-  --scroll-bar-bg-color: #faf8f7;
+  --scroll-bar-bg-color: #171c28;
   /* colors - dark theme*/
   --dark-jungle-green: #171c28;
   --yinmn-blue: #2E538F;
@@ -58,7 +58,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .commonSection{
-  padding: 60px 120px;
+  padding: 80px 120px;
 }
 
 .sectionTitleBox{
@@ -166,7 +166,7 @@ html::-webkit-scrollbar-thumb {
   position: absolute;
   top: 80px;
   right: 100px;
-  animation: rotate 20s linear infinite; /* Apply the "rotate" animation */
+  /* animation: rotate 20s linear infinite; */
 }
 
 .introRocket {
@@ -175,7 +175,7 @@ html::-webkit-scrollbar-thumb {
   bottom: 80px;
   left: 10px;
   rotate: -15deg;
-  animation: wiggleDrift 10s ease-in-out infinite; /* Apply the "wiggleDrift" animation */
+  /* animation: wiggleDrift 10s ease-in-out infinite; */
 }
 
 .introStarConstellation1 {
@@ -185,7 +185,7 @@ html::-webkit-scrollbar-thumb {
   left: 50px;
   opacity: 1;
   transition: opacity 3s ease-in-out;
-  animation: blink 6s infinite; /* Apply the "blink" animation */
+  /* animation: blink 6s infinite; */
 }
 
 .introStarConstellation2 {
@@ -194,7 +194,7 @@ html::-webkit-scrollbar-thumb {
   right: 90px;
   opacity: 1;
   transition: opacity 3s ease-in-out;
-  animation: blink 6s infinite; /* Apply the "blink" animation */
+  /* animation: blink 6s infinite; */
 }
 
 @keyframes blink {
@@ -257,6 +257,7 @@ html::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   padding-bottom: 24px;
+  flex-wrap: wrap;
 }
 
 .skillsContent{
@@ -270,15 +271,15 @@ html::-webkit-scrollbar-thumb {
 }
 
 
-/* ============================== view resume section css ============================== */
+/* ============================== work experience section css ============================== */
 .experienceBox{
   display: flex;
   padding-bottom: 32px;
 }
 
-.experienceBoxLeftBox{
+.experienceBoxLeftSide{
   flex: 0 0 auto;
-  min-width: 250px;
+  width: 260px;
   padding-right: 80px;
 }
 
@@ -299,12 +300,82 @@ html::-webkit-scrollbar-thumb {
   padding-left: 20px;
 }
 
+/* ============================== projects section css ============================== */
+.projectBox{
+  display: flex;
+  padding-bottom: 80px;
+}
+
+.projectLeftSide{
+  flex: 0 0 auto;
+  width: 600px;
+  padding-right: 40px;
+}
+
+.projectRightSide{
+  flex: 1;
+  max-width: 950px;
+}
+
+.projectImage{
+  width: inherit;
+}
+
+.projectTitle{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.projectContent{
+  padding-bottom: 80px;
+}
+
+.projectSkills{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projectSkillsPill{
+  background-color: var(--yinmn-blue);
+  padding: 8px 16px;
+  border-radius: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.centerButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#showMoreButton{
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  color: var(--platinum);
+  background-color: var(--yinmn-blue);
+  padding: 12px 32px;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+#showMoreButton:hover {
+  /* transform: scale(1.05); */
+  background-color: #1E407F;
+  /* background-color: #1C365D; */
+}
+
 /* ============================== view resume section css ============================== */
 .viewResumeSection{
   background-color: var(--yinmn-blue);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 60px 120px;
+  margin: 80px 0px;
 }
 
 .viewResumeTitle{
@@ -348,7 +419,7 @@ html::-webkit-scrollbar-thumb {
 
 .contactPill{
   background-color: var(--yinmn-blue);
-  padding: 8px 24px 8px 32px;;
+  padding: 8px 24px 8px 32px;
   border-radius: 16px;
   margin-left: -20px;
   transition: transform 0.3s;
@@ -360,6 +431,11 @@ html::-webkit-scrollbar-thumb {
 
 
 /* ============================== footer section css ============================== */
+.footerSection{
+  padding-top: 0px;
+  padding-bottom: 40px;
+}
+
 .footerContent{
   font-family: "Andika", sans-serif;
   text-align: center;
