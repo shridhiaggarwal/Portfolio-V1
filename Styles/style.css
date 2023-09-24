@@ -93,6 +93,10 @@ html::-webkit-scrollbar-thumb {
   text-decoration: underline;
 }
 
+.hidden{
+  display: none !important;
+}
+
 /* ============================== header section css ============================== */
 header {
   position: fixed;
@@ -100,7 +104,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 80px;
+  height: 72px;
   background-color: var(--dark-jungle-green);
 }
 
@@ -364,7 +368,11 @@ nav li:hover {
 }
 
 .projectContent {
-  padding-bottom: 80px;
+  padding-bottom: 64px;
+}
+
+.projectContentWithoutImage {
+  padding-bottom: 24px;
 }
 
 .projectSkills {
@@ -387,7 +395,7 @@ nav li:hover {
   justify-content: center;
 }
 
-#showMoreButton {
+#showHideButton {
   font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
   color: var(--platinum);
@@ -399,7 +407,7 @@ nav li:hover {
   transition: transform 0.5s;
 }
 
-#showMoreButton:hover {
+#showHideButton:hover {
   background-color: #1e407f;
 }
 
