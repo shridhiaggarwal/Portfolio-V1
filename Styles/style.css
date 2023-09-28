@@ -480,3 +480,15 @@ nav li:hover {
   font-family: "Andika", sans-serif;
   text-align: center;
 }
+
+/* ============================== scroll to top button css ============================== */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 999;
+}
