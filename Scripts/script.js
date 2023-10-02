@@ -33,6 +33,11 @@ scrollToTopBtn.addEventListener("click", () => {
         top: 0,
         behavior: "smooth"
     });
+    // Check if the URL has a fragment identifier
+    if (window.location.hash) {
+        // If it does, reset the URL without the fragment identifier
+        history.replaceState(null, null, window.location.pathname + window.location.search);
+    }
 });
 
 window.addEventListener("scroll", () => {

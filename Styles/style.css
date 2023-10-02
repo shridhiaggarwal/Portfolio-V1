@@ -358,13 +358,37 @@ nav ul {
   max-width: 950px;
 }
 
-.projectImage {
+.projectImageLink {
+  display: block;
   width: inherit;
+  height: inherit;
+  text-decoration: none;
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
 }
 
 .projectTitle {
+  display: flex;
+  align-items: center;
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.projectExternalLinks {
+  margin-left: 16px;
+}
+
+.projectGithubImage {
+  width: 32px;
+  height: 32px;
+}
+
+.projectExternalImage {
+  width: 32px;
+  height: 32px;
 }
 
 .projectContent {
