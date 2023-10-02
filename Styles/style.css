@@ -119,7 +119,7 @@ nav ul {
   list-style: none;
 }
 
-nav li {
+.navPill{
   background-color: var(--yinmn-blue);
   padding: 4px 16px;
   border-radius: 16px;
@@ -127,7 +127,7 @@ nav li {
   transition: transform 0.5s;
 }
 
-nav li:hover {
+.navPill:hover {
   background-color: #1e407f;
 }
 
