@@ -93,7 +93,7 @@ html::-webkit-scrollbar-thumb {
   text-decoration: underline;
 }
 
-.hidden{
+.hidden {
   display: none !important;
 }
 
@@ -108,10 +108,14 @@ header {
   background-color: var(--dark-jungle-green);
 }
 
-.logo img {
-  max-width: 100%;
-  height: auto;
+.logo {
   margin-left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px;
 }
 
 nav ul {
@@ -119,7 +123,7 @@ nav ul {
   list-style: none;
 }
 
-.navPill{
+.navPill {
   background-color: var(--yinmn-blue);
   padding: 4px 16px;
   border-radius: 16px;
@@ -148,7 +152,7 @@ nav ul {
 }
 
 .introSectionContent {
-  /* padding: 120px 100px; */
+  padding: 80px 120px;
   margin: 0 auto;
 }
 
@@ -300,16 +304,16 @@ nav ul {
   align-items: center;
   padding-bottom: 24px;
   flex-wrap: wrap;
+  grid-gap: 12px 24px;
 }
 
 .skillsContent {
-  padding-right: 16px;
+  padding-right: 4px;
 }
 
 .skillsImages img {
   width: 50px;
   height: 50px;
-  margin: 0px 12px;
 }
 
 /* ============================== work experience section css ============================== */
@@ -515,4 +519,38 @@ nav ul {
   border: none;
   cursor: pointer;
   z-index: 999;
+}
+
+/* ============================== media query css ============================== */
+
+@media screen and (max-width: 1200px) {
+  .commonSection {
+    padding: 40px;
+  }
+  .introSectionContent {
+    padding: 40px;
+  }
+  .experienceBoxLeftSide {
+    padding-right: 40px;
+  }
+  .projectLeftSide {
+    width: 450px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .commonSection {
+    padding: 40px;
+  }
+  .introSectionContent {
+    padding: 40px;
+  }
+  .experienceBoxLeftSide {
+    padding-right: 40px;
+  }
+  .projectLeftSide {
+    width: 450px;
+    padding-right: 20px;
+  }
 }
