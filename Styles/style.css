@@ -143,12 +143,40 @@ nav ul {
 .introSection {
   width: 100%;
   height: 100vh;
-  background-image: url(../Images/background2.png);
-  background-size: cover;
-  /* background-repeat: no-repeat; */
-  /* background-position: center; */
   display: flex;
   align-items: center;
+  /* background-image: url(../Images/background2.png);
+  background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+}
+
+#stars > i {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px #fff;
+  animation-name: stars;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes stars {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .introSectionContent {

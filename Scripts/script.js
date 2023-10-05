@@ -1,3 +1,22 @@
+//stars background
+function stars() {
+    const count = 30;
+    const stars = document.getElementById('stars');
+    var i = 0;
+    while (i < count) {
+        const star = document.createElement('i');
+        const size = Math.random() * 5;
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+        star.style.height = 1 + size + 'px';
+        star.style.width = star.style.height;
+        star.style.animationDuration = (Math.random() * 2) + 2 + 's';
+        stars.appendChild(star);
+        i++;
+    }
+}
+stars();
+
 //show more projects and less projects function
 document.addEventListener("DOMContentLoaded", function () {
     const showHideButton = document.getElementById("showHideButton");
