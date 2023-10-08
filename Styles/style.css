@@ -17,6 +17,12 @@ page section title - 2rem - 32px
 page section subheading - 1.5rem - 24px
 page normal text - 1.125rem - 18px */
 
+/* mobile screen
+page start - 1.5 rem - 24px
+page section title - 1.5rem - 24px
+page section subheading - 1.125rem - 18px
+page normal text - 1rem - 16px */
+
 /* ============================== main and common css ============================== */
 body {
   height: 100%;
@@ -151,34 +157,6 @@ nav ul {
   /* background-position: center; */
 }
 
-#stars > i {
-  position: absolute;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px #fff;
-  animation-name: stars;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes stars {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  95% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 .introSectionContent {
   padding: 80px 120px;
   margin: 0 auto;
@@ -309,6 +287,34 @@ nav ul {
   }
 }
 
+#stars > i {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px #fff;
+  animation-name: stars;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes stars {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 /* ============================== about section css ============================== */
 .aboutSection {
   text-align: justify;
@@ -400,6 +406,7 @@ nav ul {
 .projectImage {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
 .projectTitle {
@@ -551,7 +558,7 @@ nav ul {
 
 /* ============================== media query css ============================== */
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 993px) and (max-width: 1200px) {
   .commonSection {
     padding: 40px;
   }
@@ -567,7 +574,7 @@ nav ul {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .commonSection {
     padding: 40px;
   }
@@ -577,8 +584,108 @@ nav ul {
   .experienceBoxLeftSide {
     padding-right: 40px;
   }
+  .projectBox {
+    flex-direction: column;
+  }
   .projectLeftSide {
-    width: 450px;
-    padding-right: 20px;
+    order: 1;
+    width: 100%;
+    padding-right: 0px;
+    padding-bottom: 20px;
+  }
+  .projectRightSide {
+    order: 2;
+  }
+  .projectContent {
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .experienceBox {
+    flex-direction: column;
+  }
+  .experienceBoxLeftSide {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    padding-right: 0px;
+  }
+  .companyTitle {
+    padding-bottom: 0px;
+  }
+  .companyDuration {
+    flex: 1;
+    text-align: end;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .commonSection {
+    padding: 20px;
+  }
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+  .sectionSubtitle {
+    font-size: 1.125rem;
+  }
+  .sectionContent {
+    font-size: 1rem;
+  }
+  .introSectionContent {
+    padding: 20px;
+    padding-top: 45px;
+  }
+  .introHello {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  .introWaveImage{
+    width: 32px;
+    height: 32px;
+    margin-top: -8px;
+  }
+  .introLine {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding-top: 60px;
+    text-align: initial;
+  }
+  .introContact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .pointRightImage {
+    display: none;
+  }
+  .LineImage {
+    object-fit: cover;
+    width: 100%;
+  }
+  .aboutSection {
+    text-align: initial;
+  }
+  .skillsImages img {
+    width: 32px;
+    height: 32px;
+  }
+  .experienceBoxLeftSide {
+    flex-wrap: wrap;
+  }
+  .companyDuration {
+    flex: auto;
+  }
+  #showHideButton{
+    font-size: 1rem;
+  }
+  .contactImages {
+    flex-wrap: wrap;
+    grid-gap: 16px 0px;
+  }
+  #scrollToTopBtn {
+    bottom: 72px;
   }
 }
