@@ -5,7 +5,7 @@ function stars() {
     var i = 0;
     while (i < count) {
         const star = document.createElement('i');
-        const size = Math.random() * 5;
+        const size = 4;//Math.random() * 5;
         star.style.left = Math.random() * 100 + '%';
         star.style.top = Math.random() * 100 + '%';
         star.style.height = 1 + size + 'px';
