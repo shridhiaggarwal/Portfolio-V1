@@ -1,19 +1,41 @@
 //stars background
 function stars() {
-    const count = 30;
-    const stars = document.getElementById('stars');
-    var i = 0;
-    while (i < count) {
+    let count = 30;
+    const starsContainer = document.getElementById('stars');
+    
+    if (window.innerWidth <= 576) {
+        count = 10; // Change the star count for mobile view
+    }
+
+    function createStar() {
         const star = document.createElement('i');
-        const size = 4;//Math.random() * 5;
-        star.style.left = Math.random() * 100 + '%';
-        star.style.top = Math.random() * 100 + '%';
+        const x = Math.floor(Math.random() * (window.innerWidth - 20));
+        const y = Math.floor(Math.random() * (window.innerHeight - 20));
+        const size = 4; //Math.random() * 5;
+        star.style.left = x + 'px'; //Math.random() * 100 + '%';
+        star.style.top = y + 'px'; //Math.random() * 100 + '%';
         star.style.height = 1 + size + 'px';
         star.style.width = star.style.height;
         star.style.animationDuration = (Math.random() * 2) + 2 + 's';
-        stars.appendChild(star);
-        i++;
+        starsContainer.appendChild(star);
     }
+
+    function updateStars() {
+        const starContainers = document.querySelectorAll('#stars i');
+        for (let i = 0; i < starContainers.length; i++) {
+            starsContainer.removeChild(starContainers[i]);
+        }
+        for (let i = 0; i < count; i++) {
+            createStar();
+        }
+    }
+
+    // Initial creation of stars
+    updateStars();
+
+    // Add event listener for window resize
+    window.addEventListener('resize', updateStars);
+
 }
 stars();
 
