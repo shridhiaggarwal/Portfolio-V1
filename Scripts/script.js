@@ -75,12 +75,23 @@ toggleButton.addEventListener("click", () => {
         if(!navListOpen){
             navList.style.display = "flex";
             navListOpen = true;
+            toggleButton.children[0].src = "Images/cross.png";
         } else{
             navList.style.display = "none";
             navListOpen = false;
+            toggleButton.children[0].src = "Images/menuBar.svg";
         }
     }
 });
+
+// navList.addEventListener("click", () => {
+//     if (window.innerWidth <= 768) {
+//         if(navListOpen){
+//             navList.style.display = "none";
+//             navListOpen = false;
+//         }
+//     }
+// });
 
 window.addEventListener("resize", () => {
     if (window.innerWidth > 768) {
