@@ -124,7 +124,7 @@ header {
   width: 60px;
 }
 
-nav ul {
+.navList {
   display: flex;
   list-style: none;
 }
@@ -143,6 +143,14 @@ nav ul {
 
 .navlink:hover {
   text-decoration: none;
+}
+
+.toggleButton {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 16px;
 }
 
 /* ============================== home section css ============================== */
@@ -619,6 +627,28 @@ nav ul {
   .companyDuration {
     flex: 1;
     text-align: end;
+  }
+  header{
+    z-index: 1;
+  }
+  .navList {
+    flex-direction: column;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark-jungle-green);
+    display: none;
+  }
+  .navPill {
+    background-color: transparent;
+    padding: 16px 24px;
+    border-radius: 0px;
+    margin-right: 0px;
+    transition: transform 0.5s;
+  }
+  .toggleButton {
+    display: block;
   }
 }
 

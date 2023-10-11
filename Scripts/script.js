@@ -1,8 +1,8 @@
-//stars background
+/* ==========================================  stars background  ========================================== */
 function stars() {
     let count = 30;
     const starsContainer = document.getElementById('stars');
-    
+
     if (window.innerWidth <= 576) {
         count = 10; // Change the star count for mobile view
     }
@@ -39,7 +39,7 @@ function stars() {
 }
 stars();
 
-//show more projects and less projects function
+/* ==========================================  show more projects and less projects  ========================================== */
 document.addEventListener("DOMContentLoaded", function () {
     const showHideButton = document.getElementById("showHideButton");
     const hiddenProjects = document.querySelectorAll(".projectBox.hidden");
@@ -65,8 +65,34 @@ document.addEventListener("DOMContentLoaded", function () {
     showHideButton.addEventListener("click", toggleHiddenProjects);
 });
 
+/* ==========================================  navlist toggle button  ========================================== */
+const toggleButton = document.querySelector(".toggleButton");
+const navList = document.querySelector(".navList");
+let navListOpen = false;
 
-// Get the scroll-to-top button element
+toggleButton.addEventListener("click", () => {
+    if (window.innerWidth <= 768) {
+        if(!navListOpen){
+            navList.style.display = "flex";
+            navListOpen = true;
+        } else{
+            navList.style.display = "none";
+            navListOpen = false;
+        }
+    }
+});
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+        navList.style.display = "flex";
+    } else {
+        navList.style.display = "none";
+        navListOpen = false;
+    }
+});
+
+
+/* ==========================================  scroll-to-top button  ========================================== */
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
 scrollToTopBtn.addEventListener("click", () => {
@@ -90,7 +116,7 @@ window.addEventListener("scroll", () => {
 });
 
 
-// JavaScript to change the header box shadow after scrolling past 100vh
+/* ========================================== header box shadow after scrolling past 100vh  ========================================== */
 // window.addEventListener('scroll', function() {
 //     const header = document.querySelector('header');
 //     if (window.scrollY >= 200) {
