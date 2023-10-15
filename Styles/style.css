@@ -153,6 +153,16 @@ header {
   margin-right: 16px;
 }
 
+.resumeWithImage{
+  display: flex;
+  align-items: center;
+}
+
+.resumeHeaderImage {
+  height: 18px;
+  margin-right: 8px;
+}
+
 /* ============================== home section css ============================== */
 .introSection {
   width: 100%;
@@ -500,8 +510,6 @@ header {
 
 .viewResumeImage {
   height: 50px;
-  color: white;
-  fill: white;
   margin-right: 16px;
 }
 
