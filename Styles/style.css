@@ -10,6 +10,7 @@
   --yinmn-blue: #2e538f;
   --platinum: #e7e7e7;
   --cadet-blue: #afafbf;
+  --dark-cornflower-blue: #1e407f;
 }
 
 /* page start - 2.5 rem - 40px
@@ -103,6 +104,11 @@ html::-webkit-scrollbar-thumb {
   display: none !important;
 }
 
+.highlightedText{
+  color: var(--platinum);
+  font-weight: bold;
+}
+
 /* ============================== header section css ============================== */
 header {
   position: fixed;
@@ -138,7 +144,7 @@ header {
 }
 
 .navPill:hover {
-  background-color: #1e407f;
+  background-color: var(--dark-cornflower-blue);
 }
 
 .navlink:hover {
@@ -489,7 +495,7 @@ header {
 }
 
 #showHideButton:hover {
-  background-color: #1e407f;
+  background-color: var(--dark-cornflower-blue);
 }
 
 /* ============================== view resume section css ============================== */
